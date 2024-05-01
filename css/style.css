@@ -58,7 +58,7 @@ section#hero {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('/img/Marriage.jpg'); /* Set the background image for homepage */
+    background-image: url('/kvo-matrimony/img/Marriage.jpg'); /* Set the background image for homepage */
 }
 
 #hero h1 {
