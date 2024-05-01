@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (document.body.id === "index") {
         // Set background image for the homepage
-        var homeBackgroundImage = "/img/Marriage.jpg";
+        var homeBackgroundImage = "/kvo-matrimony/img/Marriage.jpg";
         document.getElementById("hero").style.backgroundImage = "url('" + homeBackgroundImage + "')";
 
         // Extract dominant color from the background image
