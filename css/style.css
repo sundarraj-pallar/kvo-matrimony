@@ -1,0 +1,196 @@
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Common theme for all pages except homepage */
+
+body:not(#hero) {
+    background-color: #f8f9fa; /* Set a light gray background color */
+    color: #333; /* Set text color to dark */
+}
+
+/* Styles for the homepage */
+
+section#hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('/img/Marriage.jpg'); /* Set the background image for homepage */
+}
+
+#hero h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Styles for the Profiles page */
+
+section#profiles {
+    padding: 50px 0;
+}
+
+#profiles h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Styles for the About Us page */
+
+section#about {
+    padding: 50px 0;
+}
+
+#about h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+#about p {
+    color: #555; /* Darken the text color for better readability */
+    font-size: 1.2rem;
+    line-height: 1.5; /* Increase the line height for better spacing */
+    text-align: justify; /* Justify the text for a clean look */
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Set the color of the divider */
+    margin: 50px 0; /* Adjust margin for spacing */
+}
+
+.team-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 40px 0; /* Add some spacing between the team list and the content above */
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    justify-content: center; /* Center align the items */
+}
+
+.team-member {
+    width: 150px; /* Set a fixed width for each team member */
+    margin: 10px; /* Adjust margin for spacing between team members */
+    text-align: center;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack name and image vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+.team-member img {
+    width: 100%; /* Set image width to fill the container */
+    max-height: 150px; /* Set a maximum height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    border-radius: 50%; /* Apply a circular border radius to the images */
+    border: 5px solid #fff; /* Add a white border to make the images stand out */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Enlarge the image slightly on hover */
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    margin-top: 10px; /* Add spacing between the image and the text */
+    max-width: 150px; /* Set a maximum width for the name */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for long names */
+}
+
+
+/* Styles for the Contact Us page */
+
+section#contact {
+    padding: 50px 0;
+}
+
+#contact h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #555;
+}
